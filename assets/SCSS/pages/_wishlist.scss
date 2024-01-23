@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#wishList {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+    .box {
+        position: relative;
+
+        .productDiv {
+            margin-top: 20px;
+            box-shadow: 0 0 8px 4px gray;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            .boxText {
+                margin-top: 15px;
+                padding: 25px;
+
+                .twoBtn {
+                    #add {
+                        padding: 5px 3px;
+                        border: none;
+                        background-color: red;
+                        color: white;
+                        cursor: pointer;
+                        border: 2px solid red;
+                        transition: all 0.5s ease;
+                        font-weight: 500;
+
+                        &:hover {
+                            background-color: white;
+                            border: 2px solid red;
+
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

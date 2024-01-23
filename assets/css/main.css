@@ -1,0 +1,558 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header #headTextSec .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header #headTextSec .container .headNav #burgerBtn {
+  display: none;
+  border: none;
+  padding: 3px;
+  border: 1px solid black;
+}
+header #headTextSec .container .headNav nav {
+  display: flex;
+  gap: 25px;
+}
+header #headTextSec .container .headNav nav .menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  background-color: black;
+  padding: 25px;
+}
+header #headTextSec .container .headNav nav .menu li a {
+  color: white !important;
+}
+header #headTextSec .container .headNav nav ul {
+  display: flex;
+  gap: 25px;
+  list-style-type: none;
+}
+header #headTextSec .container .headNav nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+header #headTextSec .container .headNav nav ul .headIcons {
+  display: flex;
+  gap: 15px;
+}
+header #headTextSec .container .headNav nav ul .headIcons i {
+  color: black;
+  transition: 0.5s;
+}
+header #headTextSec .container .headNav nav ul .headIcons i:hover {
+  color: rgb(2, 156, 245);
+}
+
+@media (max-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  header #headTextSec .container .headNav #burgerBtn {
+    display: block;
+  }
+  header #headTextSec .container .headNav nav ul {
+    display: none;
+  }
+  header #headTextSec .container .headNav nav ul .headIcons {
+    display: block;
+  }
+  header #headTextSec .container .headNav nav ul .headIcons i {
+    color: white;
+  }
+}
+#backImage {
+  margin-top: 5px;
+}
+#backImage .container .backPhoto {
+  background-image: url(../../../assets/image/hero_2\ \(1\).jpg);
+  width: 100%;
+  min-height: 600px;
+  background-size: cover;
+  background-position: center;
+}
+#backImage .container .backPhoto .blackDiv {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#backImage .container .backPhoto .blackDiv .backImageText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+#backImage .container .backPhoto .blackDiv .backImageText h1 {
+  font-size: 85px;
+  font-weight: 700;
+  width: 60%;
+}
+#backImage .container .backPhoto .blackDiv .backImageText p {
+  font-size: 22px;
+}
+#backImage .container .backPhoto .blackDiv .backImageText p span {
+  font-size: 28px;
+}
+
+@media (max-width: 600px) {
+  #backImage .container .backPhoto .blackDiv .backImageText h1 {
+    font-size: 40px;
+    width: 80%;
+  }
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+#products {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+#products .box {
+  position: relative;
+}
+#products .box .productDiv {
+  margin-top: 20px;
+  box-shadow: 0 0 8px 4px gray;
+}
+#products .box .productDiv img {
+  width: 100%;
+  height: auto;
+}
+#products .box .productDiv .boxText {
+  margin-top: 15px;
+  padding: 25px;
+}
+#products .box .productDiv .boxText .twoBtn #wish {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  padding: 5px;
+  border: none;
+  border-radius: 50%;
+  margin-top: 25px;
+  transition: 0.3;
+  cursor: pointer;
+}
+#products .box .productDiv .boxText .twoBtn #wish:hover i {
+  color: red;
+  transition: 0.3;
+}
+#products .box .productDiv .boxText .twoBtn #add {
+  padding: 5px 3px;
+  border: none;
+  background-color: rgb(147, 0, 119);
+  color: white;
+  cursor: pointer;
+  border: 2px solid rgb(147, 0, 119);
+  transition: all 0.5s ease;
+}
+#products .box .productDiv .boxText .twoBtn #add:hover {
+  background-color: white;
+  border: 2px solid rgb(147, 0, 119);
+  color: black;
+}
+
+.loadBtn {
+  display: flex;
+  justify-content: end;
+  margin-top: 25px;
+}
+.loadBtn #btn {
+  padding: 4px 5px;
+  border: none;
+  background-color: blue;
+  color: white;
+  border: 2px solid blue;
+  font-weight: 500;
+  transition: 0.5s;
+}
+.loadBtn #btn:hover i {
+  transform: translateX(-4px);
+}
+.loadBtn #btn:hover {
+  border: 2px solid blue;
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+}
+
+#backImageS {
+  background-image: url(../../../assets/image/hero_2\ \(1\).jpg);
+  width: 100%;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin-top: 25px;
+}
+#backImageS .blackDiv {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#backImageS .blackDiv .container .backImageText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+#backImageS .blackDiv .container .backImageText h1 {
+  font-size: 85px;
+  font-weight: 700;
+  width: 60%;
+}
+#backImageS .blackDiv .container .backImageText p {
+  font-size: 22px;
+}
+#backImageS .blackDiv .container .backImageText p span {
+  font-size: 28px;
+}
+
+@media (max-width: 600px) {
+  #backImageS .blackDiv .container .backImageText h1 {
+    font-size: 40px;
+    width: 80%;
+  }
+}
+.loremDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.loremDiv .loremImg {
+  margin-bottom: 10px;
+}
+.loremDiv .loremImg img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid rgb(147, 0, 119);
+}
+.loremDiv .loremText p {
+  font-size: 20px;
+  color: gray;
+}
+.loremDiv .loremText .nameAndLine {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.loremDiv .loremText .nameAndLine .line {
+  width: 20px;
+  height: 3px;
+  background-color: rgb(147, 0, 119);
+  margin-top: 12px;
+}
+.loremDiv .loremText .nameAndLine h6 {
+  color: rgb(147, 0, 119);
+}
+.loremDiv .loremText .nameAndLine h6 span {
+  font-size: 20px;
+}
+
+.winesText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.winesText button {
+  border: none;
+  color: rgb(147, 0, 119);
+  background-color: white;
+}
+.winesText h1 {
+  font-weight: 350;
+}
+.winesText p {
+  color: black;
+  font-weight: 550;
+}
+
+.winesBlogDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.winesBlogDiv .winesBlogImage img {
+  width: 100%;
+  height: auto;
+}
+.winesBlogDiv .winesBlogText p {
+  color: gray;
+}
+.winesBlogDiv .winesBlogText h5 {
+  font-weight: 350;
+}
+.winesBlogDiv .winesBlogText span {
+  font-size: 15px;
+}
+
+footer {
+  margin-top: 25px;
+}
+footer .endDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+  height: 40vh;
+}
+footer .endDiv .fourIcons {
+  margin-top: 25px;
+}
+footer .endDiv .fourIcons i {
+  background-color: purple;
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+}
+footer .endDiv .endText {
+  text-align: center;
+}
+footer .endDiv .endText p i {
+  color: red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#basketList {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+#basketList .box {
+  position: relative;
+}
+#basketList .box .productDiv {
+  margin-top: 20px;
+  box-shadow: 0 0 8px 4px gray;
+}
+#basketList .box .productDiv img {
+  width: 100%;
+  height: auto;
+}
+#basketList .box .productDiv .boxText {
+  margin-top: 15px;
+  padding: 25px;
+}
+#basketList .box .productDiv .boxText .twoBtn #add {
+  padding: 5px 3px;
+  border: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border: 2px solid red;
+  transition: all 0.5s ease;
+  font-weight: 500;
+}
+#basketList .box .productDiv .boxText .twoBtn #add:hover {
+  background-color: white;
+  border: 2px solid red;
+  color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#wishList {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+#wishList .box {
+  position: relative;
+}
+#wishList .box .productDiv {
+  margin-top: 20px;
+  box-shadow: 0 0 8px 4px gray;
+}
+#wishList .box .productDiv img {
+  width: 100%;
+  height: auto;
+}
+#wishList .box .productDiv .boxText {
+  margin-top: 15px;
+  padding: 25px;
+}
+#wishList .box .productDiv .boxText .twoBtn #add {
+  padding: 5px 3px;
+  border: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border: 2px solid red;
+  transition: all 0.5s ease;
+  font-weight: 500;
+}
+#wishList .box .productDiv .boxText .twoBtn #add:hover {
+  background-color: white;
+  border: 2px solid red;
+  color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.formDiv {
+  background-color: rgb(204, 202, 202);
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.formDiv #form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.formDiv #form .inputs {
+  display: flex;
+  flex-direction: column;
+}
+.formDiv #form .inputs input {
+  width: 380px;
+  padding: 7px;
+  border: none;
+  border-radius: 10px;
+}
+.formDiv #form .formBtn button {
+  padding: 4px 3px;
+  background-color: green;
+  color: white;
+  border: none;
+  width: 80px;
+  border: 2px solid green;
+  cursor: pointer;
+  transition: 0.6s;
+}
+.formDiv #form .formBtn button:hover {
+  border: 2px solid green;
+  background-color: transparent;
+  color: black;
+}
+
+#formProducts {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+#formProducts .box .productDiv {
+  margin-top: 20px;
+  box-shadow: 0 0 8px 4px gray;
+}
+#formProducts .box .productDiv img {
+  width: 100%;
+  height: 225px;
+}
+#formProducts .box .productDiv .boxText {
+  margin-top: 15px;
+  padding: 25px;
+}
+#formProducts .box .productDiv .boxText .twoBtn #add {
+  padding: 5px 3px;
+  border: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border: 2px solid red;
+}
+#formProducts .box .productDiv .boxText .twoBtn #add:hover {
+  background-color: white;
+  border: 2px solid red;
+  color: black;
+}
+
+table {
+  width: 80%;
+  margin: 30px 0;
+}
+table td {
+  border: 1px solid black;
+  padding: 10px;
+  overflow: hidden;
+}
+table td .photo {
+  width: 350px;
+}
+table td #delete {
+  background-color: red;
+  padding: 4px 6px;
+  color: white;
+  border: none;
+  border: 2px solid red;
+}
+table td #delete:hover {
+  background-color: white;
+  border: 2px solid red;
+  color: black;
+}
+
+.searchAndSort {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.searchAndSort .searchDiv input {
+  padding: 8px;
+  width: 300px;
+}
+.searchAndSort .searchDiv button {
+  padding: 8px;
+  background-color: green;
+  color: white;
+  border: none;
+  border: 2px solid green;
+}
+.searchAndSort .searchDiv button:hover {
+  background-color: white;
+  border: 2px solid green;
+  color: black;
+}
+.searchAndSort .sortDiv #selectValue {
+  padding: 5px;
+  margin-top: 5px;
+}
